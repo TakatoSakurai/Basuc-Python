@@ -6,5 +6,5 @@ text = """
 # TODO
 
 words = text.split()
-word_lengths = [len(word) for word in words]
-print(word_lengths)
+wordss = list(map(len, words))
+print(wordss)
