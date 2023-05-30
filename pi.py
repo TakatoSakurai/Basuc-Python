@@ -3,8 +3,8 @@ text = """
     quantum mechanics. All of thy geometry, Herr Planck, is fairly hard.
 """
 
-# TODO
-
 words = text.split()
 wordss = list(map(len, words))
-print(wordss)
+wordsss = map(str, wordss)
+wordssss = ''.join(wordsss)
+print(wordssss)
