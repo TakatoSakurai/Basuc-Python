@@ -1,12 +1,14 @@
-a = input("aの値を入力: ")
-b = input("bの値を入力: ")
-a = int(a)
-i = a + 1
-for j in range(2, i):
-    if a % j != 0:
-        continue
-    if j == a:
-         print(str(a) + 'は素数です')
-    if j != a:
-        print(str(a) + 'は素数でない')
-        break
+def prime_number(n):
+    if n <= 1:
+        return False
+    for j in range(2, 1 + int(n**(1/2))):
+        if n % j == 0: 
+            return False
+    return True
+
+a = int(input("nの値を入力: "))
+
+if prime_number(a):
+    print("nは素数です")
+else:
+    print("nは素数ではない")
